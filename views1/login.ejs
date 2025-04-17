@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="aa">
+<head>
+    <title>Login</title>
+</head>
+<body>
+<h1>სისტემაში შესვლა</h1>
+<% if (error) { %>
+    <p style="color:red;"><%= error %></p>
+<% } %>
+<form method="POST" action="/login">
+    <label>მომხმარებელი:</label>
+    <input type="text" name="username" required><br>
+    <label>პაროლი:</label>
+    <input type="password" name="password" required><br>
+    <button type="submit">შესვლა</button>
+</form>
+</body>
+</html>
